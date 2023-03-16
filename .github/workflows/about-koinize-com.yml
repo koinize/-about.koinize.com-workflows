@@ -54,7 +54,7 @@ jobs:
       - name: invalidate
         uses: chetan/invalidate-cloudfront-action@master
         env:
-          DISTRIBUTION: ${{ secrets.AWS_KOINIZE_DISTRIBUTION_ID }}
+          DISTRIBUTION: ${{ secrets.AWS_ABOUT_KOINIZE_DISTRIBUTION_ID }}
           PATHS: /*
           AWS_REGION: 'us-west-2'
           AWS_ACCESS_KEY_ID: ${{ secrets.KOINIZE_ACCESS_KEY }}
